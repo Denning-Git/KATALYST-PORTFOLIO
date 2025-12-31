@@ -72,9 +72,9 @@
     <main class="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <h1 class="text-3xl font-bold tracking-tight">Contact</h1>
       <p class="mt-4 text-base text-slate-600 max-w-3xl">
-        Share a bit about what you’re working on and I’ll get back to you with
-        a quick response. You can reach out directly or use the form below to
-        send details via WhatsApp.
+        Share a bit about what you’re working on and I’ll get back to you with a
+        quick response. You can use the form below or reach out directly using
+        the contact details.
       </p>
 
       <div class="mt-8 grid gap-10 md:grid-cols-[1.1fr,1fr]">
@@ -87,11 +87,17 @@
             Book a short call
           </h2>
           <p class="mt-2 text-sm text-slate-600">
-            Fill this in and it will open WhatsApp with your details ready to
-            send.
+            Fill this in and I’ll receive it by email. I’ll come back to you to
+            confirm a time for the call.
           </p>
 
-          <form id="whatsapp-form" class="mt-4 space-y-4">
+          <!-- IMPORTANT: replace FORM_ENDPOINT with your actual Formspree URL -->
+          <form
+            id="email-form"
+            action="https://formspree.io/f/mnjnanol"
+            method="POST"
+            class="mt-4 space-y-4"
+          >
             <div>
               <label
                 for="name"
@@ -104,6 +110,22 @@
                 type="text"
                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
                 placeholder="e.g. Jane Doe"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >Your email</label
+              >
+              <input
+                id="email"
+                name="_replyto"
+                type="email"
+                class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
+                placeholder="you@example.com"
                 required
               />
             </div>
@@ -131,7 +153,7 @@
               >
               <input
                 id="time"
-                name="time"
+                name="preferred_time"
                 type="text"
                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
                 placeholder="e.g. Tuesday afternoon, 3–5pm (Kigali time)"
@@ -146,23 +168,40 @@
               >
               <textarea
                 id="details"
-                name="details"
+                name="project_details"
                 rows="4"
                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
                 placeholder="Short description of the problem or idea..."
               ></textarea>
             </div>
 
+            <!-- you can use this to set a subject in Formspree -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New call request from KATALYST-DIGITAL website"
+            />
+
             <button
               type="submit"
               class="w-full rounded-full bg-sky-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-800"
             >
-              Send via WhatsApp
+              Send request
             </button>
 
             <p class="text-xs text-slate-500">
-              This will open WhatsApp with a pre-filled message. You can review
-              it before sending.
+              Your message will be sent by email. I normally respond within a
+              short time.
+            </p>
+
+            <p class="pt-2 text-xs text-slate-500">
+              Prefer WhatsApp?
+              <a
+                href="https://wa.me/250788329919"
+                target="_blank"
+                class="font-semibold text-sky-700 hover:underline"
+                >Tap here to open a chat.</a
+              >
             </p>
           </form>
         </section>
@@ -171,7 +210,7 @@
         <aside class="space-y-4 text-sm text-slate-700">
           <div class="rounded-2xl bg-slate-100 p-6">
             <h2 class="text-sm font-semibold text-slate-900">
-              Prefer to reach out directly?
+              Direct contact
             </h2>
             <dl class="mt-4 space-y-4">
               <div>
@@ -215,29 +254,5 @@
         KATALYST-DIGITAL. All rights reserved.
       </div>
     </footer>
-
-    <script>
-      // WhatsApp form handler
-      document
-        .getElementById("whatsapp-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const name = document.getElementById("name").value.trim();
-          const company = document.getElementById("company").value.trim();
-          const time = document.getElementById("time").value.trim();
-          const details = document.getElementById("details").value.trim();
-
-          let message = "New call request for KATALYST-DIGITAL:%0A%0A";
-          if (name) message += "Name: " + name + "%0A";
-          if (company) message += "Company: " + company + "%0A";
-          if (time) message += "Preferred time: " + time + "%0A";
-          if (details) message += "%0AProject / Idea:%0A" + details + "%0A";
-
-          const phone = "250788329919"; // no plus sign for wa.me
-          const url = "https://wa.me/" + phone + "?text=" + message;
-
-          window.open(url, "_blank");
-        });
-    </script>
   </body>
 </html>
