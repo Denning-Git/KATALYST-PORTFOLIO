@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | KATALYST-DIGITAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+      input,
+      textarea {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <!-- NAVBAR -->
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="flex items-center gap-3">
+            <img
+              src="logo.png"
+              alt="KATALYST-DIGITAL Logo"
+              class="h-10 w-auto md:h-12"
+            />
+            <div class="leading-tight">
+              <div class="text-sm font-semibold uppercase tracking-[0.25em]">
+                KATALYST
+              </div>
+              <div
+                class="text-xs tracking-[0.25em] text-slate-500 uppercase"
+              >
+                Digital
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <nav class="hidden gap-6 text-sm font-medium md:flex">
+          <a href="about.html" class="text-slate-700 hover:text-sky-700"
+            >About</a
+          >
+          <a href="services.html" class="text-slate-700 hover:text-sky-700"
+            >Services</a
+          >
+          <a href="projects.html" class="text-slate-700 hover:text-sky-700"
+            >Projects</a
+          >
+          <a href="contact.html" class="text-sky-700">Contact</a>
+        </nav>
+
+        <a
+          href="#book-call"
+          class="hidden rounded-full bg-sky-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-800 md:inline-block"
+        >
+          Book a call
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTACT CONTENT -->
+    <main class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <h1 class="text-3xl font-bold tracking-tight">Contact</h1>
+      <p class="mt-4 text-base text-slate-600 max-w-3xl">
+        Share a bit about what you’re working on and I’ll get back to you with
+        a quick response. You can reach out directly or use the form below to
+        send details via WhatsApp.
+      </p>
+
+      <div class="mt-8 grid gap-10 md:grid-cols-[1.1fr,1fr]">
+        <!-- Book a Call Form -->
+        <section
+          id="book-call"
+          class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100"
+        >
+          <h2 class="text-xl font-semibold text-slate-900">
+            Book a short call
+          </h2>
+          <p class="mt-2 text-sm text-slate-600">
+            Fill this in and it will open WhatsApp with your details ready to
+            send.
+          </p>
+
+          <form id="whatsapp-form" class="mt-4 space-y-4">
+            <div>
+              <label
+                for="name"
+                class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >Your name</label
+              >
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
+                placeholder="e.g. Jane Doe"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="company"
+                class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >Company / Organisation</label
+              >
+              <input
+                id="company"
+                name="company"
+                type="text"
+                class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
+                placeholder="Optional"
+              />
+            </div>
+
+            <div>
+              <label
+                for="time"
+                class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >Preferred time for the call</label
+              >
+              <input
+                id="time"
+                name="time"
+                type="text"
+                class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
+                placeholder="e.g. Tuesday afternoon, 3–5pm (Kigali time)"
+              />
+            </div>
+
+            <div>
+              <label
+                for="details"
+                class="block text-xs font-semibold uppercase tracking-[0.18em] text-slate-500"
+                >What would you like to work on?</label
+              >
+              <textarea
+                id="details"
+                name="details"
+                rows="4"
+                class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-sky-600 focus:ring-1 focus:ring-sky-600"
+                placeholder="Short description of the problem or idea..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-full bg-sky-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-800"
+            >
+              Send via WhatsApp
+            </button>
+
+            <p class="text-xs text-slate-500">
+              This will open WhatsApp with a pre-filled message. You can review
+              it before sending.
+            </p>
+          </form>
+        </section>
+
+        <!-- Direct contact info -->
+        <aside class="space-y-4 text-sm text-slate-700">
+          <div class="rounded-2xl bg-slate-100 p-6">
+            <h2 class="text-sm font-semibold text-slate-900">
+              Prefer to reach out directly?
+            </h2>
+            <dl class="mt-4 space-y-4">
+              <div>
+                <dt class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Phone / WhatsApp
+                </dt>
+                <dd class="mt-1">
+                  <a
+                    href="tel:+250788329919"
+                    class="font-medium text-sky-700 hover:underline"
+                  >
+                    +250 788 329 919
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Email
+                </dt>
+                <dd class="mt-1">
+                  <a
+                    href="mailto:info@katalyst-digital.com"
+                    class="font-medium text-sky-700 hover:underline"
+                  >
+                    info@katalyst-digital.com
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        KATALYST-DIGITAL. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      // WhatsApp form handler
+      document
+        .getElementById("whatsapp-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          const company = document.getElementById("company").value.trim();
+          const time = document.getElementById("time").value.trim();
+          const details = document.getElementById("details").value.trim();
+
+          let message = "New call request for KATALYST-DIGITAL:%0A%0A";
+          if (name) message += "Name: " + name + "%0A";
+          if (company) message += "Company: " + company + "%0A";
+          if (time) message += "Preferred time: " + time + "%0A";
+          if (details) message += "%0AProject / Idea:%0A" + details + "%0A";
+
+          const phone = "250788329919"; // no plus sign for wa.me
+          const url = "https://wa.me/" + phone + "?text=" + message;
+
+          window.open(url, "_blank");
+        });
+    </script>
+  </body>
+</html>
