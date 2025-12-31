@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KATALYST-DIGITAL | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="KATALYST-DIGITAL portfolio – showcasing digital products, AI solutions, and systems integrations built for African businesses."
+    />
+
+    <!-- Tailwind CSS CDN (no build tools needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      /* Simple fade-in animation */
+      .fade-in {
+        animation: fadeIn 0.7s ease-out both;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <!-- NAVBAR -->
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <div class="flex items-center gap-3">
+          <!-- Logo -->
+          <!-- Make sure logo.png exists in the same folder as this HTML file -->
+          <img
+            src="logo.png"
+            alt="KATALYST-DIGITAL Logo"
+            class="h-10 w-auto md:h-12"
+          />
+          <div class="leading-tight">
+            <div class="text-sm font-semibold uppercase tracking-[0.25em]">
+              KATALYST
+            </div>
+            <div class="text-xs tracking-[0.25em] text-slate-500 uppercase">
+              Digital
+            </div>
+          </div>
+        </div>
+
+        <nav class="hidden gap-6 text-sm font-medium md:flex">
+          <a href="#about" class="text-slate-700 hover:text-sky-700">About</a>
+          <a href="#services" class="text-slate-700 hover:text-sky-700"
+            >Capabilities</a
+          >
+          <a href="#projects" class="text-slate-700 hover:text-sky-700"
+            >Projects</a
+          >
+          <a href="#contact" class="text-slate-700 hover:text-sky-700"
+            >Contact</a
+          >
+        </nav>
+
+        <a
+          href="#contact"
+          class="hidden rounded-full bg-sky-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-800 md:inline-block"
+        >
+          Book a call
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="mx-auto max-w-6xl px-4 py-10 md:flex md:items-center md:justify-between md:py-16"
+    >
+      <div class="max-w-2xl space-y-6 fade-in">
+        <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
+          KATALYST-DIGITAL PORTFOLIO
+        </p>
+        <h1 class="text-3xl font-bold tracking-tight md:text-4xl">
+          Building reliable digital products for
+          <span class="text-sky-700">modern African businesses.</span>
+        </h1>
+        <p class="text-base text-slate-600 md:text-lg">
+          KATALYST-DIGITAL partners with insurers, retailers, and mobility
+          companies to design, build, and ship trustworthy digital solutions –
+          from customer-facing apps to AI-powered internal tools.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="#projects"
+            class="rounded-full bg-sky-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-800"
+          >
+            View projects
+          </a>
+          <a
+            href="#contact"
+            class="rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-800 hover:border-sky-700 hover:text-sky-800"
+          >
+            Contact KATALYST-DIGITAL
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-xs text-slate-500">
+          <div>
+            <div class="font-semibold text-slate-900">
+              Kigali, Rwanda (Remote-friendly)
+            </div>
+            <div>Serving startups, SMEs & corporates.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 w-full max-w-sm md:mt-0 md:w-80">
+        <div
+          class="rounded-3xl bg-white p-6 shadow-lg ring-1 ring-slate-100 fade-in md:ml-auto"
+        >
+          <h2 class="text-sm font-semibold text-slate-900">Quick snapshot</h2>
+          <ul class="mt-4 space-y-3 text-sm text-slate-600">
+            <li>• Digital product design & build</li>
+            <li>• Web apps, APIs & integrations</li>
+            <li>• AI-powered automation & analytics</li>
+            <li>• Industry focus: insurance, retail, mobility</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <div class="grid gap-10 md:grid-cols-[1.2fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">About</h2>
+            <p class="mt-4 text-sm uppercase tracking-[0.22em] text-slate-500">
+              KATALYST-DIGITAL
+            </p>
+            <p class="mt-4 text-base text-slate-600">
+              KATALYST-DIGITAL is a boutique digital studio focused on
+              building high-impact solutions for African markets. We sit
+              between business and technology—translating real operational
+              challenges into reliable products, with particular experience in:
+            </p>
+            <ul class="mt-4 space-y-2 text-base text-slate-600">
+              <li>• Digital insurance & claims workflows</li>
+              <li>• Retail analytics & AI-driven monitoring</li>
+              <li>• Automotive / fleet sales & operations tools</li>
+              <li>• Payments and mobile money integrations</li>
+            </ul>
+          </div>
+
+          <div
+            class="space-y-4 rounded-2xl bg-slate-50 p-6 text-sm text-slate-700"
+          >
+            <h3 class="text-sm font-semibold text-slate-900">
+              How we work with clients
+            </h3>
+            <p>
+              Every engagement starts with a short discovery call to clarify the
+              problem, business goals, and constraints. From there, we move in
+              focused sprints: prototype, validate, and then harden into
+              production—always with clear communication and documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <h2 class="text-2xl font-semibold tracking-tight">Capabilities</h2>
+        <p class="mt-3 text-base text-slate-600 max-w-2xl">
+          KATALYST-DIGITAL covers the full lifecycle from concept to launch,
+          with a strong focus on reliability and practical execution.
+        </p>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <div
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <h3 class="text-sm font-semibold text-slate-900">
+              Product & UX Design
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              User journeys, wireframes, and high-fidelity interfaces that are
+              optimized for both usability and business outcomes.
+            </p>
+          </div>
+
+          <div
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <h3 class="text-sm font-semibold text-slate-900">
+              Web Apps & Integrations
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Robust web applications, dashboards, and API integrations with
+              third-party services such as payments, SMS, and insurer systems.
+            </p>
+          </div>
+
+          <div
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <h3 class="text-sm font-semibold text-slate-900">
+              AI & Process Automation
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Applying AI to detect anomalies, automate manual tasks, and
+              provide decision support for teams in insurance, retail, and
+              mobility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <div class="flex items-baseline justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">
+              Selected Projects
+            </h2>
+            <p class="mt-3 text-base text-slate-600 max-w-2xl">
+              A snapshot of recent work across insurance, retail, and automotive
+              operations. Additional details and live demos can be shared on
+              request.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <!-- Project 1: E-NSURE -->
+          <article
+            class="flex flex-col rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <div class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">
+              Fintech / Insurtech
+            </div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">
+              E-NSURE Digital Insurance Platform
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              A multi-insurer digital platform enabling customers to purchase,
+              renew, and manage insurance policies and claims from a single
+              interface.
+            </p>
+            <dl class="mt-4 space-y-1 text-sm text-slate-600">
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Role:</dt>
+                <dd>Product design, system architecture, workflows</dd>
+              </div>
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Focus:</dt>
+                <dd>Customer onboarding, policy management, claims flows</dd>
+              </div>
+            </dl>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
+              <li>Unified experience across multiple insurance providers.</li>
+              <li>Digitized policy lifecycle: quote → bind → renew → claim.</li>
+              <li>Designed with regulatory compliance and data security in mind.</li>
+            </ul>
+          </article>
+
+          <!-- Project 2: TrackSure AI -->
+          <article
+            class="flex flex-col rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <div class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">
+              Retail / AI Analytics
+            </div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">
+              TrackSure AI – Inventory Shrinkage Detection
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              An AI-powered system for retailers in Kigali to detect inventory
+              losses due to theft, mismanagement, and expired stock, with a
+              focus on affordability and ease of adoption.
+            </p>
+            <dl class="mt-4 space-y-1 text-sm text-slate-600">
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Role:</dt>
+                <dd>End-to-end concept, data model design, UX & flows</dd>
+              </div>
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Tech:</dt>
+                <dd>Data pipelines, anomaly detection models, web dashboard</dd>
+              </div>
+            </dl>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
+              <li>Flags suspicious stock movements for store managers.</li>
+              <li>Designed for low-cost hardware and limited connectivity.</li>
+              <li>Supports gradual migration from paper to digital records.</li>
+            </ul>
+          </article>
+
+          <!-- Project 3: Afrimotors -->
+          <article
+            class="flex flex-col rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <div class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">
+              Automotive / Mobility
+            </div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">
+              Afrimotors – Digital Sales & Operations Support
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Supporting a growing automotive dealership with digital tools for
+              vehicle sales tracking, tender management, and operational
+              visibility.
+            </p>
+            <dl class="mt-4 space-y-1 text-sm text-slate-600">
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Role:</dt>
+                <dd>Workflow design, dashboards, process automation</dd>
+              </div>
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Focus:</dt>
+                <dd>Pipeline tracking, reporting, documentation workflows</dd>
+              </div>
+            </dl>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
+              <li>Structured pipeline for fleet and government tenders.</li>
+              <li>Digitized tracking of opportunities, quotes, and deliveries.</li>
+              <li>Improved visibility for leadership and sales teams.</li>
+            </ul>
+          </article>
+
+          <!-- Project 4: Payment Integrations -->
+          <article
+            class="flex flex-col rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-100"
+          >
+            <div class="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">
+              Payments & Integrations
+            </div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">
+              Payment Integrations – MTN MoMo & Gateway Providers
+            </h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Designing and implementing payment flows and integration
+              strategies to connect digital platforms with mobile money and
+              payment gateways in the Rwandan market.
+            </p>
+            <dl class="mt-4 space-y-1 text-sm text-slate-600">
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Role:</dt>
+                <dd>Integration design, documentation, coordination with PSPs</dd>
+              </div>
+              <div class="flex gap-2">
+                <dt class="font-semibold text-slate-900">Focus:</dt>
+                <dd>Customer payments, reconciliation, and reliability</dd>
+              </div>
+            </dl>
+            <ul class="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
+              <li>User-friendly payment journeys aligned with local habits.</li>
+              <li>Flows designed around MTN MoMo and gateway APIs.</li>
+              <li>Attention to compliance, auditability, and clear logs.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-t border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <div class="grid gap-10 md:grid-cols-[1.2fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">
+              Let’s talk about your project
+            </h2>
+            <p class="mt-3 text-base text-slate-600 max-w-xl">
+              Whether you’re exploring an idea or ready to build, KATALYST-DIGITAL
+              can support you with clear scoping, honest feedback, and practical
+              implementation.
+            </p>
+
+            <dl class="mt-6 space-y-4 text-base text-slate-700">
+              <div>
+                <dt class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                  Phone / WhatsApp
+                </dt>
+                <dd class="mt-1">
+                  <a
+                    href="tel:+250788329919"
+                    class="font-medium text-sky-700 hover:underline"
+                  >
+                    +250 788 329 919
+                  </a>
+                </dd>
+              </div>
+
+              <div>
+                <dt class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                  Email
+                </dt>
+                <dd class="mt-1">
+                  <a
+                    href="mailto:info@katalyst-digital.com"
+                    class="font-medium text-sky-700 hover:underline"
+                  >
+                    info@katalyst-digital.com
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Simple contact hint box -->
+          <div
+            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 text-sm text-slate-700"
+          >
+            <h3 class="text-sm font-semibold text-slate-900">
+              Typical next steps
+            </h3>
+            <ol class="mt-3 list-decimal space-y-2 pl-4">
+              <li>Share a short overview of your idea or current systems.</li>
+              <li>
+                Schedule a 30–45 minute call to review requirements and constraints.
+              </li>
+              <li>
+                Receive a concise proposal outlining scope, timelines, and
+                implementation options.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <p class="mt-10 text-xs text-slate-400">
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          KATALYST-DIGITAL. All rights reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
